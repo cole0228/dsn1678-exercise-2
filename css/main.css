@@ -89,9 +89,15 @@ body {
   left: 0;
   position: absolute;
   right: 0;
-  top: 100%;
+  top: 0;
 
   background-color: rgba(127, 219, 255, 0.6);
+
+    -webkit-animation: slide-up 500ms ease-out;
+  -ms-animation: slide-up 500ms ease-out;
+  -moz-animation: slide-up 500ms ease-out;
+  -o-animation: slide-up 500ms ease-out;
+  animation: slide-up 500ms ease-out;
 }
 
 .chart__count {
@@ -150,10 +156,49 @@ body {
   transition: all 900ms linear;
 }
 
-.chart:hover .chart__bar,
-.chart:focus .chart__bar,
-.chart:active .chart__bar{
-  top: 0;
-
-  transition: all 100ms linear;
+@-webkit-keyframes slide-up{
+  0%{
+    top: 10em;
+  }
+  100%{
+    top: 0;
+  }
 }
+
+@-ms-keyframes slide-up{
+  0%{
+    top: 10em;
+  }
+  100%{
+    top: 0;
+  }
+}
+
+@-moz-keyframes slide-up{
+  0%{
+    top: 10em;
+  }
+  100%{
+    top: 0;
+  }
+}
+
+@-o-keyframes slide-up{
+  0%{
+    top: 10em;
+  }
+  100%{
+    top: 0;
+  }
+}
+
+@keyframes slide-up{
+  0%{
+    top: 10em;
+  }
+  100%{
+    top: 0;
+  }
+}
+
+
